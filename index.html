@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <button class="hdbtn-back"><i class="fi fi-sr-arrow-small-left"></i></button>
+            <h3 class="p-now">Playing Now</h3>
+            <button class="hdbtn-menu" id="menuBtn"><i class="fi fi-sr-list"></i></button>
+            <div id="songMenu" style="display: none;">
+                <p class="song" data-src="assets/songs/Counting-Stars.mp3">Counting Stars</p>
+                <p class="song" data-src="assets/songs/Arcade.mp3">Arcade</p>
+                <p class="song" data-src="assets/songs/ilhai.mp3">Ilahi</p>
+                <p class="song" data-src="assets/songs/phir se ud chala.mp3">Phir Se Ud Chala</p>
+                <p class="song" data-src="assets/songs/chidiya.mp3">Chidiya</p>
+                
+            </div>
+        </header>
+
+        <div class="player">
+
+            <div class="img-area" id="albumArt">
+                <img src=""
+                    alt="">
+            </div>
+
+            <div class="song-details">
+                <h1 class="name">Animation</h1>
+                <h3 class="artist">Coding</h3>
+            </div>
+
+            <div class="audioC">
+                <div class="song-timer">
+                    <span class="current-time">0:00</span>
+                    <span class="max-duration">0:00</span>
+                </div>
+                <div class="progress-area">
+                    <div class="progress-bar">
+                        <audio id="main-audio" src="D:/Music PLayer/Counting-Stars.mp3"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btnC" id="prev">
+                    <i class="fi fi-sr-rewind"></i>
+                </button>
+                <button class="play-pause btnC">
+                    <i class="fi fi-sr-play play"></i>
+                </button>
+                <button class="btnC" id="next">
+                    <i class="fi fi-sr-forward"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
